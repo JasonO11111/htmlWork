@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>信息录入</title>
+</head>
+<body>
+
+    <form method="post" class="form1">
+        <div class="insureInformation">
+            <div>
+                <img class="insureInformationImg"  style="margin-left: 10px;" src="images/tf20160602-12.png">
+                <strong class="insureInformationLabel">投保人信息</strong>
+            </div>
+            <hr class="line2" color="#EFEFF0">
+            <div>
+                <span class="informationTextFormat">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+                <input class="inputTextFormat" type="text" placeholder="请输入中文姓名">
+            </div>
+            <hr class="line2" color="#EFEFF0">
+            <div>
+                <span class="informationTextFormat">身份证号</span>
+                <input class="inputTextFormat" type="text" placeholder="请填写18位身份证号码">
+            </div>
+            <hr class="line2" color="#EFEFFO">
+            <div>
+                <span class="informationTextFormat">手机号码</span>
+                <input class="inputTextFormat" type="text" placeholder="请填写11位手机号码">
+            </div>
+            <hr class="line2" color="#EFEFFO">
+            <div>
+                <span class="informationTextFormat">邮箱号码</span>
+                <input class="inputTextFormat" type="text" placeholder="用于接收电子保单">
+            </div>
+        </div>
+
+        <div class="insureInformation" style="height: 187px;">
+            <div>
+                <img class="insureInformationImg"  style="margin-left: 10px;" src="images/tf20160602-12.png">
+                <strong class="insureInformationLabel">被保险人信息</strong>
+            </div>
+            <hr class="line2" color="#EFEFF0">
+            <div>
+                <span class="informationTextFormat">与投保人关系</span>
+                <div class="popBox2" style="margin-top: 2px;margin-left: 245px;width: 90px;">
+                    <span class="tenYearText">本人</span>
+                    <img class="popImg2" src="images/tf20160602-13.png">
+                </div>
+            </div>
+            <hr class="line2" color="#EFEFF0">
+            <div>
+                <span class="informationTextFormat">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+                <input class="inputTextFormat" type="text" placeholder="请输入中文姓名">
+            </div>
+            <hr class="line2" color="#EFEFF0">
+            <div>
+                <span class="informationTextFormat">身份证号</span>
+                <input class="inputTextFormat" type="text" placeholder="请填写18位身份证号码">
+            </div>
+        </div>
+
+        <div class="informMessage">
+            <span style="margin-top: 10px;position: absolute;margin-left: 25px">
+                重要告知:子女在我公司及其他保险公司已拥有<br/>
+                有效的人身保险和正在申请的人身保险的累计<br/>
+                身故保险金额<span style="color: #69bb5b;">没有超过</span>中国保险监督管理机构<br/>
+                规定的人民币<span style="color: #69bb5b;">50万</span>元限额。
+            </span>
+            <hr style="margin-top: 95px" color="#EFEFF0">
+            <div class="radioCheckFormat" style="margin-left: 15px">
+                <input  class="radioFormat" type="radio" name="yesORno"><label>是</label>
+                <input class="radioFormat" type="radio" name="yesORno" style="margin-left: 35px"><label>否</label>
+            </div>
+        </div>
+    </form>
+    <div class="nextInsure">
+            <div class="specialPrice">
+                <small >保费合计</small>
+            </div>
+            <div class="submitMoneyText">
+                <strong>¥7.6</strong>
+            </div>
+            <div style="text-align: center;width: 100%;height: 100%;">
+                <a href="payMoney.html"><button class="nextButton" onclick="location='payMoney.html'">下一步</button></a>
+            </div>
+        </div>
+
+</body>
+</html>

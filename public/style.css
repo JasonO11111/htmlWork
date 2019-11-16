@@ -1,0 +1,307 @@
+/*body css*/
+body{
+    padding: 10px;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: #efeff0;
+}
+
+.landImg{
+    border: 1px;
+}
+
+/*陆地交通险图片*/
+.img11{
+    width:100%;
+}
+
+/*投保*/
+.insure{
+    background: #fdfdfe;
+    height: 210px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    border-radius: 5px;
+}
+
+.sureInsure{
+    background: #fdfdfe;
+    width: 100%;
+    height: 170px;
+    border:1px solid hsla(0,0%,75%,0.7);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.oneFormat{
+    margin-top: 15px;
+}
+
+.fontFormat1{
+    position: absolute;
+    font-size: 14px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.popBox{
+    background: #e7f6f0;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 165px;
+    border: 1px;
+    border-radius: 5px;
+}
+
+.popImg{
+    transform: scale(0.5);
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 120px;
+}
+
+.line1{
+    margin-top: 60px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.insureFont{
+    color:  #030303;
+    margin-left: 62px;
+}
+
+.moneyFont{
+    color: #030303;
+    margin-left: 110px;
+}
+
+.hurtFont{
+    margin-left: 15px;
+    position: absolute;
+    margin-top: 15px;
+}
+
+.popBox2{
+    background: #e7f6f0;
+    width: 80px;
+    height: 30px;
+    margin-left: 227px;
+    border: 1px;
+    position: absolute;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+.popImg2{
+    transform: scale(0.5);
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 50px;
+}
+
+.tenYearText{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#promatText{
+    position: absolute;
+    margin-left: 36px;
+    margin-top:10px ;
+    margin-bottom: 10px;
+    color: #a3a3aa;
+}
+
+.promatText{
+    color: #198bca;
+}
+
+.specialPrice{
+    color: #a3a3aa;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submitMoneyText{
+    font-size: 30px;
+    text-align: center;
+}
+
+.submitButton{
+    font-size: 16px;
+    margin-top: 15px;
+    height: 30%;
+    width:90%;
+    background: #59b44b;
+    border: 0px;
+    color: #fcfdfd;
+    border-radius: 5px;
+}
+
+/*信息录入页面css*/
+.insureInformation{
+    background: #fdfdfe;
+    height: 235px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    border-radius: 5px;
+}
+.insureInformationLabel{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 12px;
+    font-size: 15px;
+    color: #59b44b;
+}
+
+.insureInformationImg{
+    transform: scale(0.6);
+    position: absolute;
+    margin-top: 5px;
+}
+
+.line2{
+    margin-top: 45px;
+}
+
+.informationTextFormat{
+    font-size: 15px;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.inputTextFormat{
+    position: absolute;
+    margin-left: 150px;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    background: #e7f6f0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.informMessage{
+    width:100%;
+    height:135px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    margin-top: 10px;
+    background: #fdfdfe;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+
+/* 自定义radio样式 */
+.radioFormat{
+    width:0;
+    height: 0;
+    background-color:#000;
+    margin-right: 30px;
+    border-radius:50%;
+    position: relative;
+}
+
+.radioFormat:before,.radioFormat:after{
+    content:'';
+    display: block;
+    position: absolute;
+    border-radius:50%;
+    transition:.2s ease;
+}
+
+.radioFormat:before{
+    top: -14px;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    background-color: #e7f6f0;
+    border: 1px solid #e7f6f0;
+
+}
+
+.radioFormat:after{
+    top:-10px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: #e7f6f0;
+}
+
+.radioFormat:checked:after{
+    top:-10px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: #59b44b;
+}
+
+.radioFormat:checked:before{
+    border-color:#59b44b;
+}
+/* */
+.nextInsure{
+    border:1px solid hsla(0,0%,75%,0.7);
+    border-radius: 5px;
+    background:#fdfdfe;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.insurePlan{
+    background: #fdfdfe;
+    width:100%;
+    height:45px;
+    border-radius: 5px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+}
+
+.successfulImg{
+    transform:scale(0.5);
+}
+
+.shareButton{
+    font-size: 16px;
+    height:50px;
+    width:90%;
+    background: #59b44b;
+    border: 0px;
+    color: #fcfdfd;
+    border-radius: 5px;
+}
+
+.nextButton{
+    font-size: 16px;
+    margin-top: 15px;
+    height: 30%;
+    width:90%;
+    background: #59b44b;
+    border: 0px;
+    color: #fcfdfd;
+    border-radius: 5px;
+}
+
+.payButton{
+    font-size: 16px;
+    margin-top: 15px;
+    height: 30%;
+    width:90%;
+    background: #59b44b;
+    border: 0px;
+    color: #fcfdfd;
+    border-radius: 5px;
+}
+
+
