@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>首页</title>
 </head>
-<body>
+<body id="body">
     
     <div class= "landImg">
         <img class="img11" src="images/tf20160602-11.png" alt="陆地公共交通意外险">
@@ -18,11 +18,11 @@
         <div style="margin-top: 5%;">
             <div class="fontFormat1">为他/她投保：</div>
             <div class="popBox">
-                <div class="tenYearText">
+                <div class="tenYearText" id="tenYearText">
                     10周岁以内
                  </div>
                 <div class="popImg">
-                 <img style="transform: scale(0.5);margin-top: 8px" src="images/tf20160602-13.png">
+                 <img  id="whoInsureBtn" style="transform: scale(0.5);margin-top: 8px" src="images/tf20160602-13.png">
                 </div>
             </div>
         </div>
@@ -39,8 +39,8 @@
             <span style="margin-left: 20px">陆路公共交通意外身故/伤残</span>
         </div>
         <div class="popBox2">
-            <div class="tenMoneyText">10万</div>
-            <div class="popImg2">
+            <div class="tenMoneyText" id="moneyText">10万</div>
+            <div class="popImg2" id="popMoney">
                 <img style="transform: scale(0.5);" src="images/tf20160602-13.png">
             </div>
         </div>
@@ -66,6 +66,165 @@
             <button class="submitButton" onclick="location='registInformation.html'">立即投保</button>
         </div>
     </div>
+
+    <!--对话框-->
+    <dilog id="dia">
+        <div class="header">
+            为他/她投保：
+        </div>
+        <div class="content1" id="content1">
+            <div>
+                10周岁以下子女
+            </div>
+
+        </div>
+        <div class="content2" id="content2">
+            <div>
+                10-18周岁子女
+            </div>
+        </div>
+        <div class="content3" id="content3">
+          <div>
+             本人
+          </div>
+         </div>
+    </dilog>
+
+    <dilog id="dia2">
+        <div class="moneyHeader">
+            保险金额:
+        </div>
+        <div class="money1" id="money1">
+            <div>
+                10万
+            </div>
+
+        </div>
+        <div class="money1" id="money2">
+            <div>
+                20万
+            </div>
+        </div>
+        <div class="money1" id="money3">
+            <div>
+                30万
+            </div>
+        </div>
+        <div class="money1" id="money4">
+            <div>
+                40万
+            </div>
+        </div>
+        <div class="money1" id="money5">
+            <div>
+                50万
+            </div>
+        </div>
+        <div class="money1" id="money6">
+            <div>
+                60万
+            </div>
+        </div>
+        <div class="money1" id="money7">
+            <div>
+                70万
+            </div>
+        </div>
+        <div class="money1" id="money8">
+            <div>
+                80万
+            </div>
+        </div>
+        <div class="money1" id="money9">
+            <div>
+                90万
+            </div>
+        </div>
+        <div class="money1" id="money10">
+            <div>
+                100万
+            </div>
+        </div>
+    </dilog>
+    <script type="text/javascript">
+        var whoInsureBtn = document.getElementById("whoInsureBtn");
+        var dialog = document.getElementById("dia");
+        var dialog2 = document.getElementById("dia2");
+        var content1Btn = document.getElementById("content1");
+        var content2Btn = document.getElementById("content2");
+        var content3Btn = document.getElementById("content3");
+        var tenYearText = document.getElementById("tenYearText");
+        var money1Btn = document.getElementById("money1");
+        var money2Btn = document.getElementById("money2");
+        var money3Btn = document.getElementById("money3");
+        var money4Btn = document.getElementById("money4");
+        var money5Btn = document.getElementById("money5");
+        var money6Btn = document.getElementById("money6");
+        var money7Btn = document.getElementById("money7");
+        var money8Btn = document.getElementById("money8");
+        var money9Btn = document.getElementById("money9");
+        var money10Btn = document.getElementById("money10");
+        var moneyText = document.getElementById("moneyText");
+        var popMoneyBtn = document.getElementById("popMoney");
+        whoInsureBtn.addEventListener("click",function () {
+            dialog.style.display="block";
+        });
+        content1Btn.addEventListener("click",function () {
+            dialog.style.display="none";
+            tenYearText.innerText="10周岁以下子女";
+        })
+        content2Btn.addEventListener("click",function () {
+            dialog.style.display="none";
+            tenYearText.innerText="10-18周岁子女";
+        })
+        content3Btn.addEventListener("click",function () {
+            dialog.style.display="none";
+            tenYearText.innerText="本人";
+        })
+        popMoneyBtn.addEventListener("click",function () {
+            dialog2.style.display="block";
+        })
+        money1Btn.addEventListener("click",function () {
+            dialog2.style.display="none";
+            moneyText.innerText="10万";
+        })
+        money2Btn.addEventListener("click",function () {
+            dialog2.style.display="none";
+            moneyText.innerText="20万";
+        })
+        money3Btn.addEventListener("click",function () {
+            dialog2.style.display="none";
+            moneyText.innerText="30万";
+        })
+        money4Btn.addEventListener("click",function () {
+            dialog2.style.display="none";
+            moneyText.innerText="40万";
+        })
+        money5Btn.addEventListener("click",function () {
+            dialog2.style.display="none";
+            moneyText.innerText="50万";
+        })
+        money6Btn.addEventListener("click",function () {
+            dialog2.style.display="none";
+            moneyText.innerText="60万";
+        })
+        money7Btn.addEventListener("click",function () {
+            dialog2.style.display="none";
+            moneyText.innerText="70万";
+        })
+        money8Btn.addEventListener("click",function () {
+            dialog2.style.display="none";
+            moneyText.innerText="80万";
+        })
+        money9Btn.addEventListener("click",function () {
+            dialog2.style.display="none";
+            moneyText.innerText="90万";
+        })
+        money10Btn.addEventListener("click",function () {
+            dialog2.style.display="none";
+            moneyText.innerText="100万";
+        })
+    </script>
 
 </body>
 </html>
