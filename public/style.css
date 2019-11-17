@@ -21,7 +21,7 @@ body{
 /*投保*/
 .insure{
     background: #fdfdfe;
-    height: 210px;
+    height: 200px;
     width: 100%;
     margin-top: 10px;
     border: 1px solid hsla(0,0%,75%,0.7);
@@ -42,29 +42,28 @@ body{
 }
 
 .fontFormat1{
-    position: absolute;
     font-size: 14px;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width:45%;
+    display:inline-block;
+    text-align: right;
+    color: #51535c;
 }
 
 .popBox{
+    display: inline-block;
     background: #e7f6f0;
-    width: 150px;
-    height: 30px;
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 165px;
-    border: 1px;
+    height: 33px;
     border-radius: 5px;
+    width: 42%;
+    border:1px solid hsla(0,0%,75%,0) ;
 }
 
 .popImg{
-    transform: scale(0.5);
-    position: absolute;
-    margin-top: 7px;
-    margin-left: 120px;
+    line-height: 33px;
+    display:inline-block;
+    width: 25%;
+    text-align: right;
+    vertical-align: top;
 }
 
 .line1{
@@ -73,52 +72,78 @@ body{
     margin-right: 10px;
 }
 
+.lineOnePage1{
+    margin-top: 15px;
+    width: 95%;
+}
+
+.lineOnePage2{
+    margin-top: 15px;
+    width: 95%;
+}
+
 .insureFont{
     color:  #030303;
-    margin-left: 62px;
+    width:55%;
+    display:inline-block;
+    text-align: center;
 }
 
 .moneyFont{
-    color: #030303;
-    margin-left: 110px;
+    color: #51515c;
+    width:35%;
+    display:inline-block;
+    text-align: center;
+    color:  #030303;
 }
 
 .hurtFont{
-    margin-left: 15px;
-    position: absolute;
+    display:inline-block;
+    color: #51535c;
+    width: 62%;
+    font-size: 13px;
+    border: 1px solid hsla(0,0%,75%,0);
     margin-top: 15px;
 }
 
 .popBox2{
     background: #e7f6f0;
-    width: 80px;
-    height: 30px;
-    margin-left: 227px;
-    border: 1px;
-    position: absolute;
-    margin-top: 12px;
+    width: 25%;
+    height: 28px;
+    border: 1px solid hsla(0,0%,75%,0);
+    margin-top: 8px;
     border-radius: 5px;
+    display:inline-block;
 }
 
 .popImg2{
-    transform: scale(0.5);
-    position: absolute;
-    margin-top: 7px;
-    margin-left: 50px;
+    display:inline-block;
+    text-align: right;
+    width: 38%;
+    vertical-align: top;
+    margin-top: 5px;
 }
 
 .tenYearText{
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 20px;
+    display: inline-block;
+    color: #51535c;
+    width: 70%;
+    text-align: right;
+    line-height: 33px;
+}
+
+.tenMoneyText{
+    display: inline-block;
+    color: #51535c;
+    text-align: right;
+    width: 55%;
+    line-height: 28px;
 }
 
 #promatText{
-    position: absolute;
-    margin-left: 36px;
-    margin-top:10px ;
-    margin-bottom: 10px;
     color: #a3a3aa;
+    text-align: center;
+    transform: scale(0.9);
 }
 
 .promatText{
@@ -150,7 +175,7 @@ body{
 /*信息录入页面css*/
 .insureInformation{
     background: #fdfdfe;
-    height: 235px;
+    height: 240px;
     width: 100%;
     margin-top: 10px;
     border: 1px solid hsla(0,0%,75%,0.7);
@@ -170,31 +195,45 @@ body{
     margin-top: 5px;
 }
 
-.line2{
+.lineTwoPage2{
+    margin-top: 8px;
+}
+
+.lineTwoPage1{
     margin-top: 45px;
+}
+
+.relationInformation{
+    margin-left: 25px;
+    font-size: 15px;
+    display: inline-block;
+    width: 57%;
+}
+
+.myInformation{
+    display: inline-block;
 }
 
 .informationTextFormat{
     font-size: 15px;
-    position: absolute;
-    margin-left: 25px;
+    width: 40%;
     margin-top: 5px;
+    display: inline-block;
 }
 
 .inputTextFormat{
-    position: absolute;
-    margin-left: 150px;
     padding: 8px;
     font-size: 14px;
     border: none;
     background: #e7f6f0;
     border-radius: 5px;
     outline: none;
+    width: 45%;
 }
 
 .informMessage{
     width:100%;
-    height:135px;
+    height:145px;
     border: 1px solid hsla(0,0%,75%,0.7);
     margin-top: 10px;
     background: #fdfdfe;
@@ -266,6 +305,28 @@ body{
     height:45px;
     border-radius: 5px;
     border: 1px solid hsla(0,0%,75%,0.7);
+}
+
+.payMoneyText{
+    width:80%;
+    height: 100%;
+    display: inline-block;
+}
+
+.payMoneyPop{
+    width:18%;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    text-align: right;
+    transform: scale(0.5);
+    line-height: 70px;
+}
+
+.profitPeopleText{
+    width:70%;
+    height: 100%;
+    display: inline-block;
 }
 
 .successfulImg{
