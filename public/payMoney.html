@@ -5,37 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
     <title>缴费</title>
 </head>
 <body>
 
-    <div class="insurePlan">
+    <div class="insurePlan" id="insurePlan">
         <div class="payMoneyText">
             <img class="insureInformationImg"  style="margin-left: 10px;" src="images/tf20160602-12.png">
             <strong class="insureInformationLabel">投保计划</strong>
         </div>
         <div class="payMoneyPop">
-            <img  src="images/tf20160602-19.png">
+            <img  id="popPlan" src="images/tf20160602-19.png">
         </div>
     </div>
 
-    <div class="insurePlan" style="margin-top: 10px">
+    <!--替换上面的样式-->
+    <div class="popInsurePlan" id="popInsurePlan">
+        <div style="display: inline-block;width:100%;height: 40px;">
+            <div class="popPayMoneyText">
+                <div class="popInsureInformationImg">
+                    <img src="images/tf20160602-12.png">
+                </div>
+                <strong class="popInsureInformationLabel">投保计划</strong>
+            </div>
+            <div class="popInformation">
+                <img  id="hiddenPlan" src="images/tf20160602-13.png">
+            </div>
+        </div>
+        <hr color="#EFEFFO">
+        <div class="payStart">
+            <div style="line-height: 25px;font-size: 14px;color: #777780;width: 30%;text-align: center;display: inline-block;">
+                保险起期
+            </div>
+            <div style="display: inline-block;width: 40%;font-size: 14px;color: #777780;text-align: center;">
+                2016-05-26
+            </div>
+            <div style="display: inline-block;width: 15%;font-size: 14px;color: #777780;">
+                00:00:00
+            </div>
+        </div>
+        <hr color="#EFEFFO">
+        <div class="payStart">
+            <div style="line-height: 25px;font-size: 14px;color: #777780;width: 30%;text-align: center;display: inline-block;">
+                保险止期
+            </div>
+            <div style="display: inline-block;width: 40%;font-size: 14px;color: #777780;text-align: center;">
+                2017-05-25
+            </div>
+            <div style="display: inline-block;width: 15%;font-size: 14px;color: #777780;">
+                23:59:59
+            </div>
+        </div>
+    </div>
+    <!--投保计划的监听事件-->
+
+    <div class="insurePlan" id="insure" style="margin-top: 10px">
         <div class="payMoneyText">
             <img class="insureInformationImg"  style="margin-left: 10px;" src="images/tf20160602-12.png">
             <strong class="insureInformationLabel">投保人信息</strong>
         </div>
         <div class="payMoneyPop">
-            <img src="images/tf20160602-19.png">
+            <img id="popInsureInform" src="images/tf20160602-19.png">
         </div>
     </div>
 
-    <div class="insurePlan" style="margin-top: 10px">
+    <!--替换-->
+    <div class="popInsureInform" id="popInsure" style="margin-top: 10px">
+        <div style="display: inline-block;width:100%;height: 40px;">
+            <div class="popPayMoneyText">
+                <div class="popInsureInformationImg">
+                    <img src="images/tf20160602-12.png">
+                </div>
+                <strong class="popInsureInformationLabel">投保人信息</strong>
+            </div>
+            <div class="popInformation">
+                <img id="hiddenInsureInform" src="images/tf20160602-13.png">
+            </div>
+        </div>
+        <hr color="#EFEFFO">
+        <div class="payStart">
+            <div style="line-height: 25px;font-size: 14px;color: #777780;width: 30%;text-align: center;display: inline-block;">
+                姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名
+            </div>
+            <div style="display: inline-block;width: 30%;font-size: 14px;color: #777780;text-align: center;">
+                东方红
+            </div>
+        </div>
+        <hr color="#EFEFFO">
+        <div class="payStart">
+            <div style="line-height: 25px;font-size: 14px;color: #777780;width: 30%;text-align: center;display: inline-block;">
+                身份证号
+            </div>
+            <div style="display: inline-block;width: 60%;font-size: 14px;color: #777780;text-align: center;">
+                112233445566778899
+            </div>
+        </div>
+        <hr color="#EFEFFO">
+        <div class="payStart">
+            <div style="line-height: 25px;font-size: 14px;color: #777780;width: 30%;text-align: center;display: inline-block;">
+                手机号码
+            </div>
+            <div style="display: inline-block;width: 44%;font-size: 14px;color: #777780;text-align: center;">
+                12345678901
+            </div>
+        </div>
+        <hr color="#EFEFFO">
+        <div class="payStart">
+            <div style="line-height: 25px;font-size: 14px;color: #777780;width: 30%;text-align: center;display: inline-block;">
+                邮箱地址
+            </div>
+            <div style="display: inline-block;width: 57%;font-size: 14px;color: #777780;text-align: center;">
+                zhaohang@163.com
+            </div>
+        </div>
+    </div>
+
+
+    <div class="insurePlan" id="insuredInform" style="margin-top: 10px">
         <div class="payMoneyText">
             <img class="insureInformationImg"  style="margin-left: 10px;" src="images/tf20160602-12.png">
             <strong class="insureInformationLabel">被保人信息</strong>
         </div>
         <div class="payMoneyPop">
-            <img src="images/tf20160602-19.png">
+            <img id="popInsured" src="images/tf20160602-19.png">
+        </div>
+    </div>
+
+    <!--替换-->
+    <div class="popInsuredInform" id="popInsuredInform" style="margin-top: 10px">
+        <div style="display: inline-block;width:100%;height: 40px;">
+            <div class="popPayMoneyText">
+                <div class="popInsureInformationImg">
+                    <img src="images/tf20160602-12.png">
+                </div>
+                <strong class="popInsureInformationLabel">被保人信息</strong>
+            </div>
+            <div class="popInformation">
+                <img id="hiddenInsured" src="images/tf20160602-13.png">
+            </div>
+        </div>
+        <hr color="#EFEFFO">
+        <div class="payStart">
+            <div style="line-height: 25px;font-size: 14px;color: #777780;width: 37%;text-align: center;display: inline-block;">
+                与投保人关系:
+            </div>
+            <div style="display: inline-block;width: 13%;font-size: 14px;color: #777780;text-align: center;">
+                本人
+            </div>
+        </div>
+        <hr color="#EFEFFO">
+        <div class="payStart">
+            <div style="line-height: 25px;font-size: 14px;color: #777780;width: 30%;text-align: center;display: inline-block;">
+                姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名
+            </div>
+            <div style="display: inline-block;width: 30%;font-size: 14px;color: #777780;text-align: center;">
+                东方红
+            </div>
+        </div>
+        <hr color="#EFEFFO">
+        <div class="payStart">
+            <div style="line-height: 25px;font-size: 14px;color: #777780;width: 30%;text-align: center;display: inline-block;">
+                身份证号
+            </div>
+            <div style="display: inline-block;width: 60%;font-size: 14px;color: #777780;text-align: center;">
+                112233445566778899
+            </div>
+        </div>
+        <hr color="#EFEFFO">
+        <div class="payStart">
+            <div style="line-height: 25px;font-size: 14px;color: #777780;width: 30%;text-align: center;display: inline-block;">
+                手机号码
+            </div>
+            <div style="display: inline-block;width: 44%;font-size: 14px;color: #777780;text-align: center;">
+                12345678901
+            </div>
         </div>
     </div>
 
@@ -47,15 +191,91 @@
         <div style="display: inline-block;vertical-align: top;height: 100%;line-height: 45px;width: 24%;text-align: right;">法定受益人</div>
     </div>
 
-    <div class="insurePlan" style="margin-top: 10px">
+    <div class="insurePlan" id="insuredInform2" style="margin-top: 10px">
         <div class="payMoneyText">
             <img class="insureInformationImg"  style="margin-left: 10px;" src="images/tf20160602-12.png">
             <strong class="insureInformationLabel">被保人信息</strong>
         </div>
         <div class="payMoneyPop">
-            <img src="images/tf20160602-19.png">
+            <img id="popInsured2" src="images/tf20160602-19.png">
         </div>
     </div>
+
+    <!--替换-->
+    <div class="popInsuredInform2" id="popInsuredInform2">
+        <div style="display: inline-block;width:100%;height: 40px;">
+            <div class="popPayMoneyText">
+                <div class="popInsureInformationImg">
+                    <img src="images/tf20160602-12.png">
+                </div>
+                <strong class="popInsureInformationLabel">被保人信息</strong>
+            </div>
+            <div class="popInformation">
+                <img id="hiddenInsured2" src="images/tf20160602-13.png">
+            </div>
+        </div>
+        <hr color="#EFEFFO">
+        <div class="payStart">
+            <div style="line-height: 25px;font-size: 14px;color: #777780;width: 60%;text-align: center;display: inline-block;">
+                陆路公共交通意外身故伤残
+            </div>
+            <div style="display: inline-block;width: 33%;font-size: 14px;color: #777780;text-align: right;">
+                100万元
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var popPlanBtn = document.getElementById("popPlan");        //投保计划下拉按钮
+        var hiddenPlanBtn = document.getElementById("hiddenPlan");  //投保计划收按钮
+        var insurePlan = document.getElementById("insurePlan");
+        var popInsurePlan = document.getElementById("popInsurePlan");
+        var popInsureBtn = document.getElementById("popInsureInform");  //投保人下拉按钮
+        var hiddenInsureBtn = document.getElementById("hiddenInsureInform");    //投保人收按钮
+        var insure = document.getElementById("insure");
+        var popInsure = document.getElementById("popInsure");
+        var popInsuredBtn = document.getElementById("popInsured");          //被投人下拉按钮
+        var hiddenInsuredBtn = document.getElementById("hiddenInsured");    //被投人收按钮
+        var insuredInform = document.getElementById("insuredInform");
+        var popInsuredInform = document.getElementById("popInsuredInform");
+        var popInsured2Btn = document.getElementById("popInsured2");
+        var insuredInform2 = document.getElementById("insuredInform2");
+        var hiddenInsured2Btn = document.getElementById("hiddenInsured2");
+        var popInsuredInform2 = document.getElementById("popInsuredInform2");
+
+        popPlanBtn.onclick=function () {
+            insurePlan.style.display="none";
+            popInsurePlan.style.display="block";
+        }
+        hiddenPlanBtn.onclick=function () {
+            insurePlan.style.display="block";
+            popInsurePlan.style.display="none";
+        }
+        popInsureBtn.onclick=function () {
+            insure.style.display="none";
+            popInsure.style.display="block";
+        }
+        hiddenInsureBtn.onclick=function () {
+            insure.style.display="block";
+            popInsure.style.display="none";
+        }
+        popInsuredBtn.onclick=function () {
+            insuredInform.style.display="none";
+            popInsuredInform.style.display="block";
+        }
+        hiddenInsuredBtn.onclick=function () {
+            insuredInform.style.display="block";
+            popInsuredInform.style.display="none";
+        }
+        popInsured2Btn.onclick=function () {
+            insuredInform2.style.display="none";
+            popInsuredInform2.style.display="block";
+        }
+        hiddenInsured2Btn.onclick=function () {
+            insuredInform2.style.display="block";
+            popInsuredInform2.style.display="none";
+        }
+    </script>
 
     <div class="nextInsure" style="height: 180px;">
         <div class="specialPrice">

@@ -365,4 +365,76 @@ body{
     border-radius: 5px;
 }
 
+.popInsurePlan{
+    background: #fdfdfe;
+    width:100%;
+    height:135px;
+    border-radius: 5px;
+    display: none;
+    border: 1px solid hsla(0,0%,75%,0.7);
+}
+
+.popInformation{
+    width:18%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    transform: scale(0.5);
+    line-height: 55px;
+}
+
+.popInsureInformationLabel{
+    display:inline-block;
+    margin-left: 1px;
+    vertical-align: top;
+    margin-top: 12px;
+    font-size: 15px;
+    color: #59b44b;
+}
+
+.popInsureInformationImg{
+    display:inline-block;
+    margin-left: 10px;
+    height:60px;
+    transform: scale(0.6);
+}
+
+.popPayMoneyText{
+    width:80%;
+    height: 100%;
+    display: inline-block;
+}
+
+.payStart{
+     height: 25px;
+     border: 1px solid hsla(0,0%,75%,0);
+ }
+
+.popInsureInform{
+    background: #fdfdfe;
+    width:100%;
+    height:220px;
+    border-radius: 5px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    display: none;
+}
+
+.popInsuredInform{
+    background: #fdfdfe;
+    width:100%;
+    height:220px;
+    border-radius: 5px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    display: none;
+}
+
+.popInsuredInform2{
+    background: #fdfdfe;
+    width:100%;
+    height:92px;
+    border-radius: 5px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    margin-top: 10px;
+    display: none;
+}
 
