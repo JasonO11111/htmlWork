@@ -513,5 +513,16 @@ body{
     left: 33%;
     transform: translate(0,-50%);
     display: none;
+}
 
+.insurePrompt{
+    background: #ffffff;
+    width:80%;
+    border-radius: 7px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    top:40%;
+    left: 10%;
+    position: absolute;
+    transform: translate(0,-50%);
+    display: none;
 }

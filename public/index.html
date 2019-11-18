@@ -50,7 +50,7 @@
                 更多险情，请阅读
                 <a href="insureKnow.html" style="text-decoration: none;"><span class="promatText">《投保须知》</span></a>
                 和
-                <span class="promatText">《保险条款》</span>
+                <span class="promatText" id="insurePromptBtn">《保险条款》</span>
             </small>
         </div>
     </div>
@@ -67,7 +67,7 @@
         </div>
     </div>
 
-    <!--对话框-->
+    <!--年龄对话框-->
     <dilog id="dia">
         <div class="header">
             为他/她投保：
@@ -89,7 +89,7 @@
           </div>
          </div>
     </dilog>
-
+    <!--金额对话框-->
     <dilog id="dia2">
         <div class="moneyHeader">
             保险金额:
@@ -146,6 +146,14 @@
             </div>
         </div>
     </dilog>
+    <!--保险条款提示框-->
+    <div class="insurePrompt" id="insurePrompt">
+        <div style="margin: 20px 15px;">
+            在保险期间内，如保险人以乘客身份乘坐商业运营的
+            汽车、火车、轻轨地铁等间因意外伤害事故身故或残疾，
+            我们讲按保险合同及条款给付保险金。
+        </div>
+    </div>
     <script type="text/javascript">
         var whoInsureBtn = document.getElementById("whoInsureBtn");
         var dialog = document.getElementById("dia");
@@ -166,6 +174,8 @@
         var money10Btn = document.getElementById("money10");
         var moneyText = document.getElementById("moneyText");
         var popMoneyBtn = document.getElementById("popMoney");
+        var insurePrompt = document.getElementById("insurePrompt");
+        var insurePromptBtn = document.getElementById("insurePromptBtn");
         whoInsureBtn.addEventListener("click",function () {
             dialog.style.display="block";
         });
@@ -224,7 +234,9 @@
             dialog2.style.display="none";
             moneyText.innerText="100万";
         })
+        insurePromptBtn.addEventListener("click",function () {
+            insurePrompt.style.display="block";
+        })
     </script>
-
 </body>
 </html>
