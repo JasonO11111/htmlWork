@@ -440,7 +440,7 @@ body{
 
 .header{
     background: #59b44b;
-    width:40%;
+    width:150px;
     height: 40px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -450,7 +450,7 @@ body{
 
 .content1{
     background: #fdfdfe;
-    width: 40%;
+    width: 148px;
     height: 40px;
     text-align: center;
     line-height: 40px;
@@ -459,7 +459,7 @@ body{
 
 .content2{
     background: #fdfdfe;
-    width: 40%;
+    width: 150px;
     height: 40px;
     text-align: center;
     line-height: 40px;
@@ -468,7 +468,7 @@ body{
 
 .content3{
     background: #fdfdfe;
-    width: 40%;
+    width: 150px;
     height: 40px;
     text-align: center;
     line-height: 40px;
@@ -523,6 +523,15 @@ body{
     top:40%;
     left: 10%;
     position: absolute;
+    transform: translate(0,-50%);
+    display: none;
+}
+
+#dia3{
+    position: absolute;
+    width: 100%;
+    top:32%;
+    left: 33%;
     transform: translate(0,-50%);
     display: none;
 }

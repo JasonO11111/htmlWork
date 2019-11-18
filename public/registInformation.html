@@ -56,7 +56,7 @@
                 <div class="popBox2">
                     <div class="tenMoneyText">本人</div>
                     <div class="popImg2">
-                        <img style="transform: scale(0.5);" src="images/tf20160602-13.png">
+                        <img id="relationPop" style="transform: scale(0.5);" src="images/tf20160602-13.png">
                     </div>
                 </div>
             </div>
@@ -100,5 +100,49 @@
             </div>
     </div>
 
+    <dilog id="dia3">
+        <div class="moneyHeader" id="relationHeader">
+            与投保人关系:
+        </div>
+        <div class="money1">
+            <div>
+                本人
+            </div>
+
+        </div>
+        <div class="money1">
+            <div>
+                父子
+            </div>
+        </div>
+        <div class="money1">
+            <div>
+                父女
+            </div>
+        </div>
+        <div class="money1" >
+            <div>
+                母子
+            </div>
+        </div>
+        <div class="money1">
+            <div>
+                母女
+            </div>
+        </div>
+    </dilog>
+    <script type="text/javascript">
+        var relationPop = document.getElementById("relationPop");
+        var dialog3 = document.getElementById("dia3");
+        var relationHeader = document.getElementById("relationHeader");
+        relationPop.addEventListener("click",function () {
+            dialog3.style.display="block";
+        })
+        document.addEventListener("click",function (e) {
+            if(dialog3.style.display=="block"&&e.target!=dialog3&&e.target!=relationPop&&e.target!=relationHeader){
+                dialog3.style.display="none";
+            }
+        })
+    </script>
 </body>
 </html>
