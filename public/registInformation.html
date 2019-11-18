@@ -54,7 +54,7 @@
                     <span>与投保人关系</span>
                 </div>
                 <div class="popBox2">
-                    <div class="tenMoneyText">本人</div>
+                    <div class="tenMoneyText" id="myText">本人</div>
                     <div class="popImg2">
                         <img id="relationPop" style="transform: scale(0.5);" src="images/tf20160602-13.png">
                     </div>
@@ -104,28 +104,28 @@
         <div class="moneyHeader" id="relationHeader">
             与投保人关系:
         </div>
-        <div class="money1">
+        <div class="money1" id="my">
             <div>
                 本人
             </div>
 
         </div>
-        <div class="money1">
+        <div class="money1" id="dadSon">
             <div>
                 父子
             </div>
         </div>
-        <div class="money1">
+        <div class="money1" id="dadGril">
             <div>
                 父女
             </div>
         </div>
-        <div class="money1" >
+        <div class="money1" id="momSon" >
             <div>
                 母子
             </div>
         </div>
-        <div class="money1">
+        <div class="money1" id="momGril">
             <div>
                 母女
             </div>
@@ -135,14 +135,35 @@
         var relationPop = document.getElementById("relationPop");
         var dialog3 = document.getElementById("dia3");
         var relationHeader = document.getElementById("relationHeader");
+        var my = document.getElementById("my");
+        var dadSon = document.getElementById("dadSon");
+        var dadGril = document.getElementById("dadGril");
+        var momSon = document.getElementById("momSon");
+        var momGril = document.getElementById("momGril");
+        var myText = document.getElementById("myText");
         relationPop.addEventListener("click",function () {
             dialog3.style.display="block";
-        })
+        });
         document.addEventListener("click",function (e) {
             if(dialog3.style.display=="block"&&e.target!=dialog3&&e.target!=relationPop&&e.target!=relationHeader){
                 dialog3.style.display="none";
             }
-        })
+        });
+        my.addEventListener("click",function () {
+                myText.innerText="本人";
+        });
+        dadSon.addEventListener("click",function () {
+            myText.innerText="父子";
+        });
+        dadGril.addEventListener("click",function () {
+            myText.innerText="父女";
+        });
+        momSon.addEventListener("click",function () {
+            myText.innerText="母子";
+        });
+        momGril.addEventListener("click",function () {
+            myText.innerText="母女";
+        });
     </script>
 </body>
 </html>
