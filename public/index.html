@@ -22,7 +22,7 @@
 
         <div style="margin-top: 5%;">
             <div class="fontFormat1">为他/她投保：</div>
-            <div class="popBox">
+            <div class="popBox" id="popBox">
                 <div class="tenYearText" id="tenYearText">
                     10周岁以内
                  </div>
@@ -43,7 +43,7 @@
         <div class="hurtFont">
             <span style="margin-left: 20px">陆路公共交通意外身故/伤残</span>
         </div>
-        <div class="popBox2">
+        <div class="popBox2" id="popBox2">
             <div class="tenMoneyText" id="moneyText">10万</div>
             <div class="popImg2" >
                 <img id="popMoney" style="transform: scale(0.5);" src="images/tf20160602-13.png">
@@ -184,10 +184,11 @@
         var insurePrompt = document.getElementById("insurePrompt");
         var insurePromptBtn = document.getElementById("insurePromptBtn");
         var insurePromptText = document.getElementById("insurePromptText");
-        var body = document.getElementById("body");
         var header = document.getElementById("header");
         var moneyHeader = document.getElementById("moneyHeader");
         var popLayer = document.getElementById("popLayer");
+        var popBox = document.getElementById("popBox");
+        var popBox2 = document.getElementById("popBox2");
         whoInsureBtn.addEventListener("click",function () {
             dialog.style.display="block";
             popLayer.style.display="block";
