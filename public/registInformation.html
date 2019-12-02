@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
     <title>信息录入</title>
 </head>
 <body>
 
-    <form method="post" class="form1">
+    <form method="post" class="form1" action="">
         <div class="insureInformation">
             <div>
                 <img class="insureInformationImg"  style="margin-left: 10px;" src="images/tf20160602-12.png">
@@ -82,7 +82,7 @@
                 规定的人民币<span style="color: #69bb5b;">50万</span>元限额。
             </div>
             <hr color="#EFEFF0">
-            <div class="radioCheckFormat" style="margin-left: 15px">
+            <div class="radioCheckFormat" style="margin-left: 15px;margin-bottom:10px;">
                 <input  class="radioFormat" type="radio" name="yesORno"><label>是</label>
                 <input class="radioFormat" type="radio" name="yesORno" style="margin-left: 35px"><label>否</label>
             </div>
@@ -133,47 +133,6 @@
     </dilog>
     <div id="popLayer">
     </div>
-    <script type="text/javascript">
-        var relationPop = document.getElementById("relationPop");
-        var dialog3 = document.getElementById("dia3");
-        var relationHeader = document.getElementById("relationHeader");
-        var my = document.getElementById("my");
-        var dadSon = document.getElementById("dadSon");
-        var dadGril = document.getElementById("dadGril");
-        var momSon = document.getElementById("momSon");
-        var momGril = document.getElementById("momGril");
-        var myText = document.getElementById("myText");
-        var popLayer = document.getElementById("popLayer");
-        relationPop.addEventListener("click",function () {
-            dialog3.style.display="block";
-            popLayer.style.display="block";
-        });
-        document.addEventListener("click",function (e) {
-            if(dialog3.style.display=="block"&&e.target!=dialog3&&e.target!=relationPop&&e.target!=relationHeader){
-                dialog3.style.display="none";
-                popLayer.style.display="none";
-            }
-        });
-        my.addEventListener("click",function () {
-            myText.innerText="本人";
-            popLayer.style.display="none";
-        });
-        dadSon.addEventListener("click",function () {
-            myText.innerText="父子";
-            popLayer.style.display="none";
-        });
-        dadGril.addEventListener("click",function () {
-            myText.innerText="父女";
-            popLayer.style.display="none";
-        });
-        momSon.addEventListener("click",function () {
-            myText.innerText="母子";
-            popLayer.style.display="none";
-        });
-        momGril.addEventListener("click",function () {
-            myText.innerText="母女";
-            popLayer.style.display="none";
-        });
-    </script>
+    <script type="text/javascript" src="./javascripts/regitInformation.js"></script>
 </body>
 </html>

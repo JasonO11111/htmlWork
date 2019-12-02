@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
     <title>缴费</title>
 </head>
 <body>
@@ -225,59 +224,20 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-        var popPlanBtn = document.getElementById("popPlan");        //投保计划下拉按钮
-        var hiddenPlanBtn = document.getElementById("hiddenPlan");  //投保计划收按钮
-        var insurePlan = document.getElementById("insurePlan");
-        var popInsurePlan = document.getElementById("popInsurePlan");
-        var popInsureBtn = document.getElementById("popInsureInform");  //投保人下拉按钮
-        var hiddenInsureBtn = document.getElementById("hiddenInsureInform");    //投保人收按钮
-        var insure = document.getElementById("insure");
-        var popInsure = document.getElementById("popInsure");
-        var popInsuredBtn = document.getElementById("popInsured");          //被投人下拉按钮
-        var hiddenInsuredBtn = document.getElementById("hiddenInsured");    //被投人收按钮
-        var insuredInform = document.getElementById("insuredInform");
-        var popInsuredInform = document.getElementById("popInsuredInform");
-        var popInsured2Btn = document.getElementById("popInsured2");
-        var insuredInform2 = document.getElementById("insuredInform2");
-        var hiddenInsured2Btn = document.getElementById("hiddenInsured2");
-        var popInsuredInform2 = document.getElementById("popInsuredInform2");
+    <!--//保险提示框-->
+    <div class="insurePrompt" id="insurePrompt">
+        <div style="margin: 20px 15px;" id="insurePromptText">
+            在保险期间内，如保险人以乘客身份乘坐商业运营的
+            汽车、火车、轻轨地铁等间因意外伤害事故身故或残疾，
+            我们讲按保险合同及条款给付保险金。
+        </div>
+    </div>
 
-        popPlanBtn.onclick=function () {
-            insurePlan.style.display="none";
-            popInsurePlan.style.display="block";
-        }
-        hiddenPlanBtn.onclick=function () {
-            insurePlan.style.display="block";
-            popInsurePlan.style.display="none";
-        }
-        popInsureBtn.onclick=function () {
-            insure.style.display="none";
-            popInsure.style.display="block";
-        }
-        hiddenInsureBtn.onclick=function () {
-            insure.style.display="block";
-            popInsure.style.display="none";
-        }
-        popInsuredBtn.onclick=function () {
-            insuredInform.style.display="none";
-            popInsuredInform.style.display="block";
-        }
-        hiddenInsuredBtn.onclick=function () {
-            insuredInform.style.display="block";
-            popInsuredInform.style.display="none";
-        }
-        popInsured2Btn.onclick=function () {
-            insuredInform2.style.display="none";
-            popInsuredInform2.style.display="block";
-        }
-        hiddenInsured2Btn.onclick=function () {
-            insuredInform2.style.display="block";
-            popInsuredInform2.style.display="none";
-        }
-    </script>
+    <!--遮罩层-->
+    <div id="popLayer">
+    </div>
 
-    <div class="nextInsure" style="height: 180px;">
+    <div class="nextInsure" style="">
         <div class="specialPrice">
             <small >保费</small>
         </div>
@@ -285,13 +245,23 @@
             <strong>¥76</strong>
         </div>
         <div style="text-align: center;">
-            <input  class="checkFormat"  type="checkbox" style="vertical-align:center;">
-            <span style="font-size: 10px;vertical-align: center;">我已阅读并同意<a href="insureKnow.html" style="text-decoration: none;"><span style="color:#007fc5">《保险须知》</span></a>及<span style="color:#007fc5">《保险条款》</span></span>
+            <!--<input  class="checkFormat"  type="checkbox" style="vertical-align:center;">-->
+            <div class="checkBox" id="checkBox">
+                <div style="display: none;" id="trueImgBox"><img src="./images/tf20160602-18.png"></div>
+            </div>
+            <span style="font-size: 10px;">
+                我已阅读并同意
+                <a href="insureKnow.html" style="text-decoration: none;"><span style="color:#007fc5">《保险须知》</span></a>
+                及
+                <span style="color:#007fc5" id="payInsureText">《保险条款》</span>
+            </span>
         </div>
-        <div style="text-align: center;width: 100%;height: 100%;">
-            <a href="successfulPage.html"><button class="payButton" style="margin-top: 15px;">立即支付</button></a>
+        <div style="text-align: center;width: 100%;">
+            <a href="successfulPage.html"><button class="payButton" style="margin-top: 10px;height: 50px;margin-bottom: 15px;">立即支付</button></a>
         </div>
     </div>
+
+    <script type="text/javascript" src="./javascripts/payMoney.js"></script>
 
 </body>
 </html>

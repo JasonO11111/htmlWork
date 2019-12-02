@@ -1,24 +1,561 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-  overflow: hidden;
+/*body css*/
+body{
+    padding: 10px;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: #efeff0;
 }
 
-a {
-  color: #00B7FF;
+.landImg{
+    border: 1px;
 }
 
-.content{
-  padding: 10px;
+/*陆地交通险图片*/
+.img11{
+    width:100%;
 }
-.contentBlock{
-  margin-bottom: 15px;
+
+/*投保*/
+.insure{
+    background: #fdfdfe;
+    height: 200px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    border-radius: 5px;
 }
-.popUpBox{
-  background-color: rgba(105, 100, 100, 0.3);
-  line-height: 40px;
-  height: 40px;
+
+.sureInsure{
+    background: #fdfdfe;
+    width: 100%;
+    height: 170px;
+    border:1px solid hsla(0,0%,75%,0.7);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.oneFormat{
+    margin-top: 15px;
+}
+
+.fontFormat1{
+    font-size: 14px;
+    width:45%;
+    display:inline-block;
+    text-align: right;
+    color: #51535c;
+}
+
+.popBox{
+    display: inline-block;
+    background: #e7f6f0;
+    height: 33px;
+    border-radius: 5px;
+    width: 45%;
+    border:1px solid hsla(0,0%,75%,0) ;
+}
+
+.popImg{
+    line-height: 33px;
+    display:inline-block;
+    width: 20%;
+    text-align: right;
+    vertical-align: top;
+}
+
+.line1{
+    margin-top: 60px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.lineOnePage1{
+    margin-top: 15px;
+    width: 95%;
+}
+
+.lineOnePage2{
+    margin-top: 15px;
+    width: 95%;
+}
+
+.insureFont{
+    color:  #030303;
+    width:55%;
+    display:inline-block;
+    text-align: center;
+}
+
+.moneyFont{
+    color: #51515c;
+    width:35%;
+    display:inline-block;
+    text-align: center;
+    color:  #030303;
+}
+
+.hurtFont{
+    display:inline-block;
+    color: #51535c;
+    width: 62%;
+    font-size: 13px;
+    border: 1px solid hsla(0,0%,75%,0);
+    margin-top: 15px;
+}
+
+.popBox2{
+    background: #e7f6f0;
+    width: 27%;
+    height: 28px;
+    border: 1px solid hsla(0,0%,75%,0);
+    margin-top: 8px;
+    border-radius: 5px;
+    display:inline-block;
+}
+
+.popImg2{
+    display:inline-block;
+    text-align: right;
+    width: 38%;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.tenYearText{
+    display: inline-block;
+    color: #51535c;
+    width: 75%;
+    text-align: right;
+    line-height: 33px;
+}
+
+.tenMoneyText{
+    display: inline-block;
+    color: #51535c;
+    text-align: right;
+    width: 55%;
+    line-height: 28px;
+}
+
+#promatText{
+    color: #a3a3aa;
+    text-align: center;
+    transform: scale(0.9);
+}
+
+.promatText{
+    color: #198bca;
+}
+
+.specialPrice{
+    color: #a3a3aa;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submitMoneyText{
+    font-size: 30px;
+    text-align: center;
+}
+
+.submitButton{
+    font-size: 16px;
+    margin-top: 15px;
+    height: 30%;
+    width:90%;
+    background: #59b44b;
+    border: 0px;
+    color: #fcfdfd;
+    border-radius: 5px;
+}
+
+/*信息录入页面css*/
+.insureInformation{
+    background: #fdfdfe;
+    height: 242px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    border-radius: 5px;
+}
+.insureInformationLabel{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 12px;
+    font-size: 15px;
+    color: #59b44b;
+}
+
+.insureInformationImg{
+    transform: scale(0.6);
+    position: absolute;
+    margin-top: 5px;
+}
+
+.lineTwoPage2{
+    margin-top: 8px;
+}
+
+.lineTwoPage1{
+    margin-top: 45px;
+}
+
+.relationInformation{
+    margin-left: 25px;
+    font-size: 15px;
+    display: inline-block;
+    width: 57%;
+}
+
+.myInformation{
+    display: inline-block;
+}
+
+.informationTextFormat{
+    font-size: 15px;
+    width: 40%;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.inputTextFormat{
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    background: #e7f6f0;
+    border-radius: 5px;
+    outline: none;
+    width: 47%;
+}
+
+.informMessage{
+    width:100%;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    margin-top: 10px;
+    background: #fdfdfe;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+
+/* 自定义radio样式 */
+.radioFormat{
+    width:0;
+    height: 0;
+    background-color:#000;
+    margin-right: 30px;
+    border-radius:50%;
+    position: relative;
+}
+
+.radioFormat:before,.radioFormat:after{
+    content:'';
+    display: block;
+    position: absolute;
+    border-radius:50%;
+    transition:.2s ease;
+}
+
+.radioFormat:before{
+    top: -14px;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    background-color: #e7f6f0;
+    border: 1px solid #e7f6f0;
 
 }
 
+.radioFormat:after{
+    top:-10px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: #e7f6f0;
+}
+
+.radioFormat:checked:after{
+    top:-10px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: #59b44b;
+}
+
+.radioFormat:checked:before{
+    border-color:#59b44b;
+}
+/* */
+.nextInsure{
+    border:1px solid hsla(0,0%,75%,0.7);
+    border-radius: 5px;
+    background:#fdfdfe;
+    margin-top: 10px;
+}
+
+.insurePlan{
+    background: #fdfdfe;
+    width:100%;
+    height:45px;
+    border-radius: 5px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+}
+
+.payMoneyText{
+    width:80%;
+    height: 100%;
+    display: inline-block;
+}
+
+.payMoneyPop{
+    width:18%;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    text-align: right;
+    transform: scale(0.5);
+    line-height: 70px;
+}
+
+.profitPeopleText{
+    width:70%;
+    height: 100%;
+    display: inline-block;
+}
+
+.successfulImg{
+    transform:scale(0.5);
+}
+
+.shareButton{
+    font-size: 16px;
+    height:50px;
+    width:90%;
+    background: #59b44b;
+    border: 0px;
+    color: #fcfdfd;
+    border-radius: 5px;
+}
+
+.nextButton{
+    font-size: 16px;
+    margin-top: 15px;
+    height: 50px;
+    width:90%;
+    background: #59b44b;
+    border: 0px;
+    color: #fcfdfd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.payButton{
+    font-size: 16px;
+    margin-top: 15px;
+    height: 30%;
+    width:90%;
+    background: #59b44b;
+    border: 0px;
+    color: #fcfdfd;
+    border-radius: 5px;
+}
+
+.popInsurePlan{
+    background: #fdfdfe;
+    width:100%;
+    height:135px;
+    border-radius: 5px;
+    display: none;
+    border: 1px solid hsla(0,0%,75%,0.7);
+}
+
+.popInformation{
+    width:18%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    transform: scale(0.5);
+    line-height: 55px;
+}
+
+.popInsureInformationLabel{
+    display:inline-block;
+    margin-left: 1px;
+    vertical-align: top;
+    margin-top: 12px;
+    font-size: 15px;
+    color: #59b44b;
+}
+
+.popInsureInformationImg{
+    display:inline-block;
+    margin-left: 10px;
+    height:60px;
+    transform: scale(0.6);
+}
+
+.popPayMoneyText{
+    width:80%;
+    height: 100%;
+    display: inline-block;
+}
+
+.payStart{
+     height: 25px;
+     border: 1px solid hsla(0,0%,75%,0);
+ }
+
+.popInsureInform{
+    background: #fdfdfe;
+    width:100%;
+    height:220px;
+    border-radius: 5px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    display: none;
+}
+
+.popInsuredInform{
+    background: #fdfdfe;
+    width:100%;
+    height:220px;
+    border-radius: 5px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    display: none;
+}
+
+.popInsuredInform2{
+    background: #fdfdfe;
+    width:100%;
+    height:92px;
+    border-radius: 5px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    margin-top: 10px;
+    display: none;
+}
+
+.header{
+    background: #59b44b;
+    width:150px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.content1{
+    background: #fdfdfe;
+    width: 148px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid hsla(0,0%,75%,0.4);
+}
+
+.content2{
+    background: #fdfdfe;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid hsla(0,0%,75%,0.4);
+}
+
+.content3{
+    background: #fdfdfe;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#dia{
+   position: absolute;
+    width: 100%;
+    height: 160px;
+    top:37%;
+    left: 30%;
+    transform: translate(0,-50%);
+    display: none;
+    z-index: 11;
+}
+
+.moneyHeader{
+    background: #59b44b;
+    width:30%;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.money1{
+    background: #fdfdfe;
+    width: 30%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid hsla(0,0%,75%,0.4);
+}
+
+#dia2{
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    top:22%;
+    left: 33%;
+    transform: translate(0,-50%);
+    display: none;
+    z-index: 11;
+}
+
+.insurePrompt{
+    background: #ffffff;
+    width:80%;
+    border-radius: 7px;
+    border: 1px solid hsla(0,0%,75%,0.7);
+    top:40%;
+    left: 10%;
+    position: absolute;
+    transform: translate(0,-50%);
+    display: none;
+    z-index: 11;
+}
+
+#dia3{
+    position: absolute;
+    width: 100%;
+    top:32%;
+    left: 33%;
+    transform: translate(0,-50%);
+    display: none;
+    z-index: 11;
+}
+
+#popLayer{
+    position: fixed;
+    display:none;
+    left:0;
+    top:0;
+    z-index:10;
+    background:#DCDBDC;
+    opacity:0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.checkBox{
+    display: inline-block;
+    background-image: url(../images/tf20160602-17.png);
+    width: 34px;
+    height: 34px;
+    transform: scale(0.5);
+    vertical-align: middle;
+}
